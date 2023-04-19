@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Form</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left-container">
+      <div class="banner">
+        <img src="./images/odin-lined.png" alt="odin-logo" id="odin">
+        <span>ODIN</span>
+      </div>
+    </div>
+    <div class="right-container">
+      <div class="sign-up-message">
+        <p>This is not a real online service! You Know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+        <br>
+        <p>You <em>know</em> you want to.</p>
+      </div>
+      <form action="https://httpbin.org/post" method="post">
+        <fieldset>
+          <legend>Let's do this!</legend>
+          <label for="first-name">FIRST NAME</label>
+          <input type="text" id="first-name" name="first-name">
+          
+          <label for="last-name">LAST NAME</label>
+          <input type="text" id="last-name" name="last-name">
+          
+          <label for="email">EMAIL</label>
+          <input type="email" id="email" name="email">
+          
+          <label for="phone-no">PHONE NUMBER</label>
+          <input type="number" id="phone-no" name="phone-no">
+          
+          <label for="password">PASSWORD</label>
+          <input type="password" id="password" name="password">
+          
+          <label for="password-confirm">CONFIRM PASSWORD</label>
+          <input type="password" id="password-confirm" name="password-confirm">
+          
+        </fieldset>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
