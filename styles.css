@@ -1,3 +1,4 @@
+html { overflow-y: hidden; }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 @font-face {
@@ -31,6 +32,7 @@ input::-webkit-inner-spin-button {
   background-image: url('./images/bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: hidden;
   padding-top: 20vh;
 }
 
