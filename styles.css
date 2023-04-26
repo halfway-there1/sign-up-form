@@ -18,21 +18,25 @@ input::-webkit-inner-spin-button {
 }
 
 .container {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   display: flex;
+  position: absolute;
 }
 
 /* ----------------------------------------------- */
 
 .side-hero {
-  height: 100vh;
-  flex-basis: 35vw;
+  height: 100%;
+  flex-basis:35vw ;
   background-image: url('./images/bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 20vh;
+  object-fit: cover;
+  
 }
+
 
 .banner {
   color: white;
@@ -56,10 +60,11 @@ input::-webkit-inner-spin-button {
 
 .main-content {
   font-family: 'Roboto', sans-serif;
-  height: 100vh;
+  height: 100%;
   flex-basis: 65vw;
   display: flex;
   flex-direction: column;
+  
 }
 
 .child {
@@ -70,7 +75,7 @@ input::-webkit-inner-spin-button {
 
 .sign-up-message {
   background-color: rgb(249, 250, 252);
-  padding: 12% 18% 4% 20px;
+  padding: 40px 10px 0px 10px;
 }
 
 .footer {
@@ -117,6 +122,7 @@ fieldset {
 .input-item {
   flex-basis: 35%;
   min-width: fit-content;
+  margin: -10px;
 }
 
 label {
