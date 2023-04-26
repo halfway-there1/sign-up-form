@@ -9,13 +9,15 @@
 </head>
 <body>
   <div class="container">
-    <div class="left-container">
+    
+    <div class="side-hero">
       <div class="banner">
-        <img src="./images/odin-lined.png" alt="odin-logo" id="odin">
+        <img src="./images/odin-lined.png" alt="odin-logo" class="logo">
         <span>ODIN</span>
       </div>
     </div>
-    <div class="right-container">
+    
+    <div class="main-content">
       
       <div class="child sign-up-message">
         <p>This is not a real online service! You Know you need something like this in your life to help you realize your deepest dreams.</p>
@@ -24,35 +26,35 @@
         <p>You <em>know</em> you want to.</p>
       </div>
       
-      <form class="child" action="https://httpbin.org/post" method="post">
-        <p id="header">Let's do this!</p>
+      <form class="child" id="sign-up-form" action="https://httpbin.org/post" method="post">
+        <p class="form-caption">Let's do this!</p>
         <fieldset>
-          <div class="fields">
+          <div class="input-item">
             <label for="first-name">FIRST NAME</label>
-            <input type="text" id="first-name" name="first-name">
+            <input type="text" id="first-name" name="first-name" minlength="5">
           </div>
           
-          <div class="fields">
+          <div class="input-item">
             <label for="last-name">LAST NAME</label>
             <input type="text" id="last-name" name="last-name">
           </div>
           
-          <div class="fields">
+          <div class="input-item">
             <label for="email">EMAIL</label>
             <input type="email" id="email" name="email">
           </div>
           
-          <div class="fields">
+          <div class="input-item">
             <label for="phone-no">PHONE NUMBER</label>
             <input type="number" id="phone-no" name="phone-no">
           </div>
           
-          <div class="fields">
+          <div class="input-item">
             <label for="password">PASSWORD</label>
             <input type="password" id="password" name="password">
           </div>
           
-          <div class="fields">
+          <div class="input-item">
             <label for="password-confirm">CONFIRM PASSWORD</label>
             <input type="password" id="password-confirm" name="password-confirm">
           </div>
@@ -61,7 +63,7 @@
       </form>
       
       <div class="child footer">
-        <button type="submit" id="btn">Create Account</button>
+        <button type="submit" form="sign-up-form" id="btn">Create Account</button>
         <p>Already have an account? <span>Log in.</span></p>
       </div>
       

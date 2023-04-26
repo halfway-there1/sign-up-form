@@ -25,7 +25,7 @@ input::-webkit-inner-spin-button {
 
 /* ----------------------------------------------- */
 
-.left-container {
+.side-hero {
   height: 100vh;
   flex-basis: 35vw;
   background-image: url('./images/bg.jpg');
@@ -48,13 +48,13 @@ input::-webkit-inner-spin-button {
   font-family: norse-bold, sans-serif;
 }
 
-#odin {
+.logo {
   height: 80%;
 }
 
 /* ----------------------------------------------- */
 
-.right-container {
+.main-content {
   font-family: 'Roboto', sans-serif;
   height: 100vh;
   flex-basis: 65vw;
@@ -100,7 +100,7 @@ input::-webkit-inner-spin-button {
   color: #596d48;
 }
 
-#header {
+.form-caption {
   padding: 20px 20px 0px 20px;
   font-size: 1.3em;
 }
@@ -114,7 +114,7 @@ fieldset {
   row-gap: 4vh;
 }
 
-.fields {
+.input-item {
   flex-basis: 35%;
   min-width: fit-content;
 }
